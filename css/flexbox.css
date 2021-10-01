@@ -1,0 +1,53 @@
+html {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 80%;
+  padding: 1em;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  height: 100%;
+  display: flex;
+}
+
+header {
+  background-color: red;
+}
+
+article {
+  background-color: #675BA7;
+  flex: 2 2 12em; /* flex-grow, flex-shrink, flex-basis  */
+  order: 1;
+}
+
+nav {
+  background-color: green;
+  order: 2;
+}
+
+aside {
+  background-color: blue;
+  order: 3;
+}
+
+nav,
+aside {
+  flex: 1;
+}
+
+footer {
+  background-color: orange;
+}
+
+@media screen and (max-width: 500px){
+  main {
+    flex-direction: column;
+  }
+}

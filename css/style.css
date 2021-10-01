@@ -6,7 +6,7 @@ body {
 }
 
 .hero-container {
-
+  display: flex;
 }
 
 .homepage-slider {
@@ -19,11 +19,11 @@ body {
 
 .flex-container {
   display: inline-flex;
-  flex-direction: row;
-  border: 3px solid #ffcc00;
+  flex-direction: column;
+  /* border: 3px solid #ffcc00;
   width: 33%;
   height: 30em;
-  flex-wrap:wrap;
+  flex-wrap:wrap; */
   
 }
 
@@ -32,6 +32,7 @@ body {
   font-size: 1.2em;
   padding: 1em;
   text-align: center;
+  flex-grow: 1;
 }
 
 .flex-item:first-child {
